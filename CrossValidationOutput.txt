@@ -1,0 +1,116 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>The cross-validation results based the optimal threshold (5.592) are shown in the file.>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+The first column in the following list is the index of protein complexes in the benchmark.
+The second column is the PDB id of protein complexes in the benchmark.
+The third column is the logrithm value of experimental associaiton rates for each protein complex with base 10.
+The fourth column is the assigned class for each protein complex based on the threshold. The value -1 stands for the class which associatin rates are lower than the threshold and 1 stands for the other class which association rates are higher than the threshold.
+The fifth column is the predicted outputs from the neurnal network model. The negative values mean that the protein complexes were predicted as the class which associatin rates are lower than the threshold, and the positive values mean that the protein complexes were predicted as the class which associatin rates are higher than the threshold.
+The last column in the following list indicates whether the prediction is true or false by comparing with the experimental value, with 0 means false and 1 means true.
+Finally, the true positive (TP), true negative (TN), false positive (FP), false negative (FN), sensitivity, specificity, precision, and accuracy are calculated based the cross-validation results and summaried at the bottom of the file.
+
+index  PDB   exp_kon  Category  Pred_P/N  T/F
+    1 1A22   5.47712  -1.00000   0.36580   0
+    2 1AO7   4.36173  -1.00000  -0.53710   1
+    3 1B2S   7.63347   1.00000   0.04098   1
+    4 1B2U   7.56820   1.00000   0.10978   1
+    5 1B3S   8.59106   1.00000   0.39882   1
+    6 1B41   6.70329   1.00000   0.74335   1
+    7 1BD2   4.98227  -1.00000   0.56335   0
+    8 1BJ1   4.61278  -1.00000  -0.45116   1
+    9 1BRS   8.56820   1.00000   0.81060   1
+   10 1CBW   5.23045  -1.00000  -0.77760   1
+   11 1CZ8   4.61278  -1.00000  -0.63790   1
+   12 1EMV   7.85974   1.00000   0.95429   1
+   13 1FC2   5.27875  -1.00000  -0.33581   1
+   14 1FR2   7.41497   1.00000   0.18363   1
+   15 1FSS   7.83251   1.00000   0.96102   1
+   16 1GL0   5.01284  -1.00000  -0.58544   1
+   17 1GL1   5.90309   1.00000  -0.98593   0
+   18 1IAR   7.11394   1.00000   0.89716   1
+   19 1JRH   5.78462   1.00000   0.73888   1
+   20 1JTD   6.88649   1.00000  -0.86754   0
+   21 1JTG   5.03342  -1.00000   0.96768   0
+   22 1KTZ   5.86923   1.00000   0.56946   1
+   23 1LFD   6.88649   1.00000   0.51402   1
+   24 1LP9   4.49136  -1.00000   0.34569   0
+   25 1MAH   8.89209   1.00000   0.52356   1
+   26 1MHP   5.39794  -1.00000   0.10294   0
+   27 1MI5   4.54158  -1.00000  -0.24671   1
+   28 1MLC   6.39794   1.00000   0.12056   1
+   29 1MQ8   5.12385  -1.00000  -0.08653   1
+   30 1NMB   5.20683  -1.00000   0.99254   0
+   31 1OGA   4.44716  -1.00000  -0.75268   1
+   32 1QSE   4.76343  -1.00000  -0.44963   1
+   33 1REW   5.77815   1.00000  -0.99218   0
+   34 1TM1   6.74819   1.00000  -0.57723   0
+   35 1X1X   5.95279   1.00000   0.77579   1
+   36 1YY9   6.16435   1.00000   0.11050   1
+   37 2AJF   4.85248  -1.00000   0.04138   0
+   38 2AK4   4.81690  -1.00000  -0.07187   1
+   39 2BNR   4.38021  -1.00000   0.31138   0
+   40 2C5D   7.32222   1.00000   0.98728   1
+   41 2DSQ   5.82672   1.00000   0.60838   1
+   42 2FTL   5.99564   1.00000  -0.37814   0
+   43 2GOX   5.60638   1.00000   0.95158   1
+   44 2GYK   7.23805   1.00000   0.31006   1
+   45 2I26   5.32222  -1.00000  -0.04711   1
+   46 2JCC   4.61278  -1.00000   0.73539   0
+   47 2P5E   5.75587   1.00000  -0.84939   0
+   48 2PYE   4.25042  -1.00000  -0.44272   1
+   49 2QJ9   5.60206   1.00000   0.82620   1
+   50 2QJA   5.47712  -1.00000   0.99977   0
+   51 2QJB   5.44716  -1.00000  -0.99582   1
+   52 2SIC   6.81291   1.00000  -0.36641   0
+   53 2UWE   4.51851  -1.00000   0.78831   0
+   54 2VIR   5.04139  -1.00000  -0.28832   1
+   55 2VLN   8.00000   1.00000   0.91876   1
+   56 2VLO   7.53403   1.00000   0.67214   1
+   57 2VLP   7.81425   1.00000   0.90968   1
+   58 2VLQ   7.89818   1.00000   0.84134   1
+   59 2VLR   4.77085  -1.00000   0.14644   0
+   60 2WPT   7.69897   1.00000   0.95844   1
+   61 3BDY   4.51851  -1.00000  -0.04486   1
+   62 3BE1   5.00000  -1.00000  -0.20071   1
+   63 3BK3   6.14613   1.00000  -0.08962   0
+   64 3BP8   5.99782   1.00000  -0.24893   0
+   65 3D5R   6.07918   1.00000   0.97616   1
+   66 3D5S   6.12385   1.00000   0.93169   1
+   67 3HFM   6.27416   1.00000   0.94607   1
+   68 3L5X   6.09691   1.00000   0.83676   1
+   69 3LB6   8.08636   1.00000   0.44415   1
+   70 3MZG   4.97313  -1.00000  -0.74082   1
+   71 3MZW   6.60206   1.00000   0.12006   1
+   72 3N06   5.04139  -1.00000  -0.79723   1
+   73 3N0P   4.99564  -1.00000  -0.97482   1
+   74 3N85   6.11394   1.00000  -0.18331   0
+   75 3NCB   4.94448  -1.00000  -0.98797   1
+   76 3NCC   4.82607  -1.00000  -0.97020   1
+   77 3NGB   4.58320  -1.00000  -0.68977   1
+   78 3QHY   6.27875   1.00000   0.94648   1
+   79 3S9D   6.32222   1.00000  -0.35401   0
+   80 3U82   5.75587   1.00000  -0.02965   0
+   81 3W2D   4.02938  -1.00000  -0.53542   1
+   82 4CVW   6.17609   1.00000  -0.95630   0
+   83 4FTV   4.65321  -1.00000  -0.59234   1
+   84 4G0N   7.55023   1.00000   0.98253   1
+   85 4HFK   5.11059  -1.00000  -0.74212   1
+   86 4HRN   5.50786  -1.00000  -0.89054   1
+   87 4JPK   4.19590  -1.00000  -0.99439   1
+   88 4MNQ   4.90309  -1.00000   0.30964   0
+   89 4MYW   5.73640   1.00000  -0.26596   0
+   90 4RA0   7.20412   1.00000   0.93141   1
+   91 4U6H   5.70969   1.00000   0.87445   1
+   92 4UYP   6.32222   1.00000   0.11543   1
+   93 4UYQ   6.30103   1.00000  -0.81155   0
+   94 5C6T   5.46982  -1.00000  -0.29467   1
+   95 5F4E   5.06070  -1.00000  -0.45930   1
+   96 5XCO   6.11394   1.00000  -0.32917   0
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   
+TP=37; TN=30; FP=13; FN=16;
+Sensitivity=0.70   
+Specificity=0.70
+Precision=0.74   
+Accuracy=0.70
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
